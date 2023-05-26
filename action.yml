@@ -1,0 +1,22 @@
+name: 'Terraform Cache'
+description: 'Cache Terraform plugins to improve workflow execution time.'
+author: 'jongwooo <jongwooo.han@gmail.com>'
+
+runs:
+  using: 'composite'
+  steps:
+    - run: |
+        echo 'plugin_cache_dir="$HOME/.terraform.d/plugin-cache"' > ~/.terraformrc
+        mkdir --parents ~/.terraform.d/plugin-cache
+      shell: bash
+    - uses: actions/cache@v3
+      with:
+        path: |
+          ~/.terraform.d/plugin-cache
+        key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
+        restore-keys: |
+           ${{ runner.os }}-terraform-
+
+branding:
+  icon: 'archive'
+  color: 'purple'
