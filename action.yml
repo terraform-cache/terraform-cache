@@ -1,5 +1,5 @@
 name: 'Terraform Cache'
-description: 'Cache Terraform plugins to improve workflow execution time.'
+description: 'Cache Terraform providers to improve workflow execution time.'
 author: 'jongwooo <jongwooo.han@gmail.com>'
 
 runs:
