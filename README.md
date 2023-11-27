@@ -3,7 +3,7 @@
 This action allows caching [Terraform](https://www.terraform.io) providers to improve workflow execution time.
 
 [![LICENSE](https://img.shields.io/github/license/terraform-cache/terraform-cache?color=blue)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/terraform-cache/terraform-cache?style=social)](https://github.com/jongwooo/terraform-cache)
+[![GitHub stars](https://img.shields.io/github/stars/terraform-cache/terraform-cache?style=social)](https://github.com/terraform-cache/terraform-cache)
 
 ## Usage
 
