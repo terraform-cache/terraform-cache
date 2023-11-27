@@ -2,8 +2,8 @@
 
 This action allows caching [Terraform](https://www.terraform.io) providers to improve workflow execution time.
 
-[![LICENSE](https://img.shields.io/github/license/jongwooo/terraform-cache?color=blue)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/jongwooo/terraform-cache?style=social)](https://github.com/jongwooo/terraform-cache)
+[![LICENSE](https://img.shields.io/github/license/terraform-cache/terraform-cache?color=blue)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/terraform-cache/terraform-cache?style=social)](https://github.com/jongwooo/terraform-cache)
 
 ## Usage
 
@@ -27,7 +27,7 @@ This action currently caches the following directories:
   with:
     terraform_version: 1.4.6
 
-- uses: jongwooo/terraform-cache@v1
+- uses: terraform-cache/terraform-cache@v1
 
 - name: Init
   run: |
