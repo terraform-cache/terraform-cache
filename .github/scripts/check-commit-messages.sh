@@ -11,12 +11,11 @@ fail=$(git show -s --format=format:'%s' "$@" | grep -v -E "${REGEX}")
 
 echo "$fail"
 
-if [[ $fail ]]
-then
-    echo ""
-    echo "Above ↑ commits don't conform to commit message format:"
-    echo "https://github.com/jongwooo/terraform-cache/blob/main/.github/CONTRIBUTING.md#commit-message-rules"
-    echo ""
-    echo "Please fix."
-    exit 1
+if [[ $fail ]]; then
+	echo ""
+	echo "Above ↑ commits don't conform to commit message format:"
+	echo "https://github.com/terraform-cache/terraform-cache/blob/main/.github/CONTRIBUTING.md#commit-message-rules"
+	echo ""
+	echo "Please fix."
+	exit 1
 fi

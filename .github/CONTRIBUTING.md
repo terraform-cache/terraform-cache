@@ -17,7 +17,7 @@ $ git commit [...]
 $ git push origin [YOUR_REPOSITORY]
 
 # Enroll pull-request!
-# in https://github.com/jongwooo/terraform-cache
+# in https://github.com/terraform-cache/terraform-cache
 ```
 
 ## Commit message rules

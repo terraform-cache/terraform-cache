@@ -1,6 +1,5 @@
 name: 'Terraform Cache'
 description: 'Cache Terraform providers to improve workflow execution time.'
-author: 'jongwooo <jongwooo.han@gmail.com>'
 
 runs:
   using: 'composite'
